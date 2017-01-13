@@ -1,0 +1,1 @@
+callBackdata(JSON.stringify([{"id":"屏東","name":"鵝鑾鼻燈塔","address":"屏東縣恆春鎮燈塔路90號","tel":"(08)885 1111"}]));

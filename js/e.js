@@ -1,0 +1,1 @@
+callBackdata(JSON.stringify([{"id":"台東","name":"三仙台","address":"台東縣成功鎮","tel":"(08)985 4097"}]));

@@ -1,0 +1,51 @@
+<html lang="zh-TW">
+    <head>
+        <center>              
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>中部</title>
+            <h1>中部</h1>
+    </head>
+<body>    
+<script type="text/javascript">    
+function callBackdata(txt) {
+var jsonDoc = JSON.parse(txt);
+str ="<table border=1><tr><td>縣市</td><td>地點</td><td>住址</td><td>電話</td><tr>";
+ 
+str +="<tr><td>"  + jsonDoc[0].id;
+str +="</td><td>" + jsonDoc[0].name;
+str +="</td><td>" + jsonDoc[0].address;
+str +="</td><td>" + jsonDoc[0].tel;    
+str +="</table>";    
+document.getElementById("m").innerHTML = str;   
+}    
+</script> 
+        
+
+<div id="banner2">
+<div id="m"></div>
+<script type="text/javascript" src="js/m.js"></script> 
+    
+    <a href="asia.html"><img src="css/img/asia0.jpg" width="400" height="250"></a> 
+    
+<script type="text/javascript">    
+function callBackdata(txt) {
+var jsonDoc = JSON.parse(txt);
+str ="<table border=1><tr><td>縣市</td><td>地點</td><td>住址</td><td>電話</td><tr>"; 
+str +="<tr><td>"  + jsonDoc[1].id;
+str +="</td><td>" + jsonDoc[1].name;
+str +="</td><td>" + jsonDoc[1].address;
+str +="</td><td>" + jsonDoc[1].tel;    
+str +="</table>";    
+document.getElementById("m1").innerHTML = str;  
+}    
+</script>
+<div id="m1"></div>
+
+<script type="text/javascript" src="js/m.js"></script>
+<a href="fungjia.html"><img src="css/img/fg.jpg" width="400" height="250"></a> <br>
+    <a href="index.html"><img src="css/img/r.jpg" width="70" height="70"></a> 
+    </div>  
+        </center>
+    </body>
+</html>
